@@ -7,10 +7,10 @@ import os
 print(os.getenv('BUTTON_CLICKED'))
 import time
 
-
+save_image=True
 app = Flask(__name__)
 
-save_image=True
+
 @app.route("/")
 def Home():
     global save_image
@@ -35,9 +35,6 @@ def gen(camera):
         yield(b'--frame\r\n'
               b'Content-Type:image/jpeg\r\n\r\n' + frame
               + b"\r\n\r\n")
-
-
-
     
 @app.route("/video_feed")
 def video_feed():
@@ -45,6 +42,11 @@ def video_feed():
 
 
 
+# Gallery Starts from here
+
+@app.route("/gallery")
+def gallery():
+    return render_template("gallery.html")
     
 
     
