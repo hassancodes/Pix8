@@ -1,19 +1,9 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <title>Pix8 | 8-bit Avatar Generator</title>
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <meta name="description" content="" />
-  <link rel="icon" href="favicon.png">
-</head>
-<body>
-  <h1 align=center>Pix8</h1>
+{% include 'navbar.html' %}
+
   <img id="bg"  src="{{url_for("video_feed")}}" />
 <!--  <img id="bg"  src="{{url_for('static', filename='frame.jpg')}}"/> -->
 
   
   <button> <a href="{{url_for('static', filename='frame.jpg')}}" download>Download</a></button>
  
-</body>
-</html>
+  {% include 'footer.html' %}

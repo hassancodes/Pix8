@@ -21,7 +21,7 @@ class Camera(object):
         cartoon = cv.bitwise_and(color, color, mask = edges)
         w,h = 128,128
         frame1 = cv.resize(cartoon, (w, h), interpolation=cv.INTER_LINEAR)
-        final = cv.resize(frame1, (480, 270), interpolation=cv.INTER_NEAREST)
+        final = cv.resize(frame1, (720, 405), interpolation=cv.INTER_NEAREST)
 
         ret,jpeg = cv.imencode(".jpg",final)
         # cv.imshow('Pix8', final)
