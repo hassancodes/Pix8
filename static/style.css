@@ -1,8 +1,8 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
 body{
-
+    font-family:'Poppins';
 }
-
-
 
 /* Video section starts from here */
 
@@ -159,4 +159,5 @@ body{
     margin-top:60px;
 
 }
+
 
