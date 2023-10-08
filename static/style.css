@@ -1,0 +1,162 @@
+body{
+
+}
+
+
+
+/* Video section starts from here */
+
+.video-section{
+    display:flex;
+    flex-direction: column;
+    margin:auto;
+    justify-content: center;
+    align-items: center;
+    padding-top: 30px;
+}
+.video-section img{
+    border-radius: 20px;
+    padding : 10px;
+    margin:auto;
+}
+
+.video-section a{
+    border-radius: 10px;
+    padding : 20px 10px 20px 10px;
+    text-align: center;
+    font-size: 16px;
+  
+}
+
+
+
+
+
+
+
+
+
+/* Gallery Page Starts from here */
+
+
+.card-img-top {
+    width: 100%;
+    height: 300px !important;
+    object-fit: cover;
+}
+
+
+.img-container {
+    position: relative;
+  }
+  
+  .overlay-img {
+    position: absolute;
+    top: 15;
+    left: 0;
+    width: 100%;
+    height: 300px !important;
+  }
+
+  .inner-container{
+    display:flex;
+    flex-wrap: wrap;
+    gap: 100px;
+  }
+
+  .inner-container .col-6{
+    flex:3 3 200px;
+    height:300px;
+    width:100%;
+  }
+
+
+
+.fadein img {
+
+    -webkit-animation-name: fade;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-duration: 6s;
+    animation-name: fade;
+    animation-iteration-count: infinite;
+    animation-duration: 6s;
+}
+
+@-webkit-keyframes fade {
+
+    0% {opacity: 1;}
+    20% {opacity: 1;}
+    33% {opacity: 1;}
+    53% {opacity: 1;}
+    100% {opacity: 1;}
+}
+@keyframes fade {
+    0% {opacity: 1;}
+    20% {opacity: 1;}
+    33% {opacity: 1;}
+    53% {opacity: 1;}
+    100% {opacity: 0;}
+}
+
+#f1 {
+    background-color: lightblue;
+}
+#f2 {
+    -webkit-animation-delay: -4s;
+    background-color: yellow;
+}
+
+/* Gallery Page Ends here */
+
+
+
+
+
+/* Upload and create design starts from here */
+.main-card{
+    max-width: 500px;
+    margin:auto;
+    padding-top:200px;
+}
+
+.main-card .card{
+    height: 300px;
+    /* border:1px solid red; */
+}
+
+.card-body{
+    display:flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    max-width: 350px;
+    margin:auto;
+}
+
+.card-body .btn{
+    margin-top:5px;
+}
+
+
+
+/* footer starts from here @@@@@@@@@@@@@@@@@@@ */
+
+.footer-cls{
+    text-decoration: none !important;
+    color:white !important;
+
+    margin:auto;
+    text-decoration: none;
+}
+
+
+
+/* @@@@@@@@@@@@@@@@ After conversion css of image*/
+
+
+.converted{
+    margin:auto;
+    margin-top:60px;
+
+}
+

@@ -1,0 +1,20 @@
+{%include "navbar.html" %}
+<div class="main-card">
+<div class="card text-center">
+    <div class="card-header">
+      Convert to Pix8 Image
+    </div>
+    <div class="card-body">
+      <h5 class="card-title">Select a Jpeg File and upload</h5>
+      <p class="card-text">only <strong>jpeg</strong> and <strong> jpg </strong> files <i class="fa-solid fa-file"> </i>  are  supported</p>
+
+      <form class="submit-form" method=post enctype=multipart/form-data>
+        <input class="btn btn-dark" type=file name=file>
+        <input class="btn btn-secondary" type=submit value=Upload>
+      </form>
+    </div>
+  </div>
+
+</div>
+
+{%include "footer.html" %}

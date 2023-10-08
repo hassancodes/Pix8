@@ -31,9 +31,7 @@ class Camera(object):
     
     def down_image(self):
         if self.count==True:
-            # print("This  is self #########################")
             cv.imwrite("static/frame.jpg" , self.current)
-            # print(self.current)
             self.count==False
         else:
             pass
