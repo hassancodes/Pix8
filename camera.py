@@ -3,7 +3,7 @@ import cv2 as cv
 # main class that process the images and then send it over to the flask server in app.py
 class Camera(object):
     def __init__(self):
-        self.video = cv.VideoCapture("landscape.mp4");
+        self.video = cv.VideoCapture(0);
         self.current =None
         self.count =True
     
@@ -31,9 +31,9 @@ class Camera(object):
     
     def down_image(self):
         if self.count==True:
-            print("This  is self #########################")
+            # print("This  is self #########################")
             cv.imwrite("static/frame.jpg" , self.current)
-            print(self.current)
+            # print(self.current)
             self.count==False
         else:
             pass
