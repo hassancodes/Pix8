@@ -1,8 +1,6 @@
 import cv2 as cv
 from flask import Flask,render_template,redirect,Response
 from camera import Camera
-from dotenv import load_dotenv
-load_dotenv()
 import os
 print(os.getenv('BUTTON_CLICKED'))
 import time
